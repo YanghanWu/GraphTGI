@@ -5,7 +5,7 @@
 
 - `data/` contains the necessary dataset files;
 - `main.py` main function for GraphTGI.
-- 
+
 # Requirment
 
 The main requirements are:
