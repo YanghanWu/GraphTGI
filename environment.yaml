@@ -1,4 +1,4 @@
-name: GAETFA
+name: GraphTGI
 channels:
   - pytorch
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
