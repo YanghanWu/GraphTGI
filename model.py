@@ -7,9 +7,9 @@ from mxnet.ndarray.gen_op import Activation
 import numpy as np
 from dgl.nn import  GATConv
 
-class GNNMDA(nn.Block):
+class GraphTGI(nn.Block):
     def __init__(self, encoder, decoder):
-        super(GNNMDA, self).__init__()
+        super(GraphTGI, self).__init__()
 
         self.encoder = encoder
         self.decoder = decoder
