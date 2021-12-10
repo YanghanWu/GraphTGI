@@ -7,9 +7,8 @@ from scipy import interp
 from sklearn import metrics
 import warnings,sys
 import networkx as nx
-import prettytable as pt
 from train import Train
-from findtop import findtopk,findconfirmed
+
 
 
 if __name__ == '__main__':
