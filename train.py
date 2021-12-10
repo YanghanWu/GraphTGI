@@ -12,7 +12,7 @@ from sklearn import metrics
 
 
 from utils import build_graph, sample
-from model import GNNMDA, GraphEncoder, BilinearDecoder
+from model import GraphTGI, GraphEncoder, BilinearDecoder
 
 import dgl.function as FN
 
@@ -96,7 +96,7 @@ def Train(directory, epochs, aggregator, embedding_size, layers, dropout, slope,
         print('## Testing edges:', len(test_eid))
 
         # Train the model
-        model = GNNMDA(GraphEncoder(embedding_size=embedding_size, n_layers=layers, G=g_train, aggregator=aggregator,
+        model = GraphTGI(GraphEncoder(embedding_size=embedding_size, n_layers=layers, G=g_train, aggregator=aggregator,
                                     dropout=dropout, slope=slope, ctx=ctx),
                        BilinearDecoder(feature_size=embedding_size))
 
