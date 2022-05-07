@@ -1,5 +1,7 @@
 # GraphTGI
- An graph attention-based model for predicting TF-target gene interactions
+ An graph attention-based model for predicting TF-target gene interactions.
+ For details of the model, refer to [this paper](https://doi.org/10.1093/bib/bbac148).
+ 
  
 # Overview
 
@@ -15,4 +17,9 @@ The main requirements are:
 - dgl-cu102==0.6.0.post1
  
  use`conda env create -f environment.yaml` to set up the environment.
+ 
+# Cite
+Please cite our paper if you use this code in your own work.
+
+
 
